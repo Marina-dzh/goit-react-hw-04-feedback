@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import { useEffect } from "react";
+
 import { useState } from "react";
 import { FeedbackOptions } from "./Feedback/feedback";
 import { Statistics } from "./Statistics/statistics";
@@ -32,9 +31,12 @@ export const App = () => {
         break;
       case "bad":
 
-    setBad(pS => pS + 1)
+        setBad(pS => pS + 1);
+        break;
+      default:
+        alert("Something went wrong, please reload page")
   }
- 
+  
 }
 
     return (
