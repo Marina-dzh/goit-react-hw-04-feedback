@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { Button } from "./feedback.styled";
-export const FeedbackOptions = ( {options, onLeaveFeedback }) => {
+export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
+  console.log(options)
     const keys = Object.keys(options)
   
   return (
